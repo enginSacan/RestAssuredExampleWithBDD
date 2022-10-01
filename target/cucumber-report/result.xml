@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="5.722">
+    <testcase classname="Article related actıons can be taken by user as follows:" name="Users wants to create an article" time="3.972">
+        <system-out>
+            <![CDATA[Given User has rights to authenticate.......................................passed
+When User creates their own articles........................................passed
+Then User reaches the article...............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Article related actıons can be taken by user as follows:" name="User wants to update an article" time="0.761">
+        <system-out>
+            <![CDATA[Given User has rights to authenticate.......................................passed
+When User updates their own article.........................................passed
+Then User reaches updated article...........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Article related actıons can be taken by user as follows:" name="User wants to delete an article" time="0.767">
+        <system-out>
+            <![CDATA[Given User has rights to authenticate.......................................passed
+When User deletes their own article.........................................passed
+Then User reaches deleted article...........................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
