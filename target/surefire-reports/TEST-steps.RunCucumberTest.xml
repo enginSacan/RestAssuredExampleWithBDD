@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="steps.RunCucumberTest" time="5.617" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="steps.RunCucumberTest" time="9.85" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2022.2.1"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -63,7 +63,6 @@
     <property name="java.vendor.version" value="Zulu11.58+23-CA"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Article related actıons can be taken by user as follows:" name="Users wants to create an article" time="4.078"/>
-  <testcase classname="Article related actıons can be taken by user as follows:" name="User wants to update an article" time="0.765"/>
-  <testcase classname="Article related actıons can be taken by user as follows:" name="User wants to delete an article" time="0.774"/>
+  <testcase classname="Article related actıons can be taken by user as follows:" name="Users wants to create an article" time="4.316"/>
+  <testcase classname="Article related actıons can be taken by user as follows:" name="User wants to update article title" time="5.534"/>
 </testsuite>

@@ -36,7 +36,17 @@ public class RestRequestHandler {
                 .body(requestContent.toJson())
                 .post();
     }
-
+    public void updateWithToken (String requestUrl, SerializableJson requestContent, String jwt) {
+        RestAssured.baseURI = requestUrl;
+        responseOptions = RestAssured
+                .given()
+                .log().all(true)
+                .auth()
+                .basic("candidatex", "qa-is-cool")
+                .headers(getHeadersWithToken(jwt))
+                .body(requestContent.toJson())
+                .put();
+    }
     public void get (String requestUrl) {
         RestAssured.baseURI = requestUrl;
         responseOptions = RestAssured

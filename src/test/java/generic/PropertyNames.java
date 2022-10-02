@@ -11,4 +11,5 @@ public class PropertyNames {
     public static final String REST_USERNAME = "rest.username";
     public static final String REST_PASSWORD = "rest.password";
     public static final String REST_CREATE_ARTICLE_ENDPOINT = "create.article.api";
+    public static final String REST_TAG_LIST = "tag.list.api";
 }

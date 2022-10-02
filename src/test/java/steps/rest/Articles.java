@@ -6,14 +6,11 @@ import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import model.Article;
-import model.AuthenticationResponse;
 import org.junit.jupiter.api.Assertions;
 
-import java.lang.reflect.Executable;
+
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 import static client.AuthenticationHandler.sendValidAuthentication;
 
@@ -34,27 +31,24 @@ public class Articles {
 
     @Then("User reaches the article")
     public void userReachesTheArticle() {
-
+        ArticleHandler.getArticleFromApi();
+        Assertions.assertEquals("ReThinking",ArticleHandler.getArticleResponse().getArticle().getTitle());
     }
 
-    @When("User updates their own article")
+    @When("User updates their own article title")
     public void userUpdatesTheirOwnArticle() {
-        System.out.println("A");
+        List<String>tagList = new ArrayList<>();
+        tagList.add(ArticleHandler.getTagListFromApi().getTags().get(1));
+        tagList.add(ArticleHandler.getTagListFromApi().getTags().get(100));
+        tagList.add(ArticleHandler.getTagListFromApi().getTags().get(15));
+        ArticleHandler.createArticle("Test5","descrpTest5","testbody6",tagList, token);
+        ArticleHandler.updateArticleTitle("NEW NEW NEW",token);
     }
 
     @Then("User reaches updated article")
     public void userReachesUpdatedArticle() {
-        System.out.println("A");
-    }
-
-    @When("User deletes their own article")
-    public void userDeletesTheirOwnArticle() {
-        System.out.println("A");
-    }
-
-    @Then("User reaches deleted article")
-    public void userReachesDeletedArticle() {
-        System.out.println("A");
+        ArticleHandler.getArticleFromApi();
+        Assertions.assertEquals("NEW NEW NEW",ArticleHandler.getArticleResponse().getArticle().getTitle());
     }
 
 }

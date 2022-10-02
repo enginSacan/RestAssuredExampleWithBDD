@@ -5,6 +5,8 @@ model/ResponseUser.class
 model/JsonParser.class
 generic/PropertyNames.class
 client/ArticleHandler.class
+model/TagList.class
+model/TagList$TagListBuilder.class
 model/AuthenticationResponse$AuthenticationResponseBuilder.class
 model/Article$ArticleBuilder.class
 steps/RunCucumberTest.class
