@@ -13,7 +13,7 @@ You have to go to the folder that you clone.
 Then you can run command below to run the tests:
 
 ```
-mvn test -Dcucumber.options="--tags @WebArticles"
+mvn test -Dcucumber.options="--tags @ArticleApi"
 ```
 
 You can have the result html, json and Junit XML in the target/cucumber-report folder.
