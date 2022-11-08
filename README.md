@@ -1,4 +1,5 @@
-# BackBaseAssignment
+# RestAssuredExampleWithBDD
+
 This repo is created to show subject below:
 
 * Checking article creation and duplicate article
